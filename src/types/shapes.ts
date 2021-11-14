@@ -1,23 +1,23 @@
-import { Coordinates } from './space'
+import { ICoordinates } from './space'
 
-interface ShapePrototype {
+export interface IShapePrototype {
   widthOutline: number
   colorOutline: string
   colorFill: string
 }
 
-export interface Rectangle extends ShapePrototype {
-  topLeft: Coordinates
+export interface IRectangle extends IShapePrototype {
+  topLeft: ICoordinates
   width: number
   length: number
 }
 
-export interface Circle extends ShapePrototype {
-  center: Coordinates
+export interface ICircle extends IShapePrototype {
+  center: ICoordinates
   radius: number
 }
 
-export interface PolygonMisc extends ShapePrototype {
-  topLeft: Coordinates
-  coordinates: Coordinates[]
+export interface IPolygonMisc extends IShapePrototype {
+  topLeft: ICoordinates
+  coordinates: ICoordinates[]
 }

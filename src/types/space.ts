@@ -1,10 +1,10 @@
-export interface Coordinates {
+export interface ICoordinates {
   x: number
   y: number
 }
 
-export interface Direction {
+export interface IDirection {
   distance: number
-  origin: Coordinates
-  destination: Coordinates
+  start: ICoordinates
+  end: ICoordinates
 }
